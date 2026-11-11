@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Teacher Dashboard</h1>
+    <p>Create Advanced Excel Examination</p>
+</header>
+
+<div class="card">
+
+    <h2>Exam Information</h2>
+
+    <label>Teacher Name</label>
+    <input type="text" id="teacherName">
+
+    <label>Exam Title</label>
+    <input type="text" id="examTitle">
+
+    <label>Time Per Question</label>
+    <input type="number" id="examTime" value="20">
+
+    <hr>
+
+    <h2>Add MCQ Question</h2>
+
+    <label>Question</label>
+    <input type="text" id="question">
+
+    <label>Option A</label>
+    <input type="text" id="optionA">
+
+    <label>Option B</label>
+    <input type="text" id="optionB">
+
+    <label>Option C</label>
+    <input type="text" id="optionC">
+
+    <label>Option D</label>
+    <input type="text" id="optionD">
+
+    <label>Correct Answer</label>
+    <select id="correctAnswer">
+        <option value="A">Option A</option>
+        <option value="B">Option B</option>
+        <option value="C">Option C</option>
+        <option value="D">Option D</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="addQuestion()">Add Question</button>
+
+    <h3>Questions Added:</h3>
+    <div id="questionList"></div>
+
+    <br>
+
+    <button onclick="createExam()">Save Examination</button>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
